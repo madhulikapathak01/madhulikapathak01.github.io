@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Madhulika Pathak is a New York-based business and technology reporter covering companies, markets, AI and infrastructure.">
+<title>Madhulika Pathak — Business & Technology Reporter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF8F2;
+    --ink:#1C1B18;
+    --rule:#DAD5C6;
+    --wire:#A8321F;
+    --slate:#6B675D;
+    --paper-dim:#F1EEE3;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Source Sans 3', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 24px 100px;
+  }
+
+  header.masthead{
+    padding:56px 0 28px;
+    text-align:center;
+  }
+  .kicker{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--wire);
+    margin:0 0 14px;
+  }
+  h1.name{
+    font-family:'Source Serif 4', serif;
+    font-weight:700;
+    font-size:58px;
+    line-height:1;
+    margin:0 0 12px;
+    letter-spacing:-0.01em;
+  }
+  .role-line{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--slate);
+    margin:0;
+  }
+  .rule{border:none;border-top:1px solid var(--ink);margin:0;}
+  .rule-thin{border:none;border-top:1px solid var(--rule);margin:0;}
+  .rule-pair{padding-top:14px;}
+  .rule-pair hr:first-child{margin-bottom:3px;}
+
+  nav.masthead-nav{
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    padding:16px 0;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+  }
+  nav.masthead-nav a{
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+  }
+  nav.masthead-nav a:hover{border-bottom-color:var(--wire);color:var(--wire);}
+
+  section.bio{
+    padding:36px 0 8px;
+    display:grid;
+    grid-template-columns:112px 1fr;
+    gap:28px;
+    align-items:start;
+  }
+  .headshot{
+    width:112px;
+    height:112px;
+    object-fit:cover;
+    object-position:center 20%;
+    border-radius:2px;
+    background:var(--paper-dim);
+    border:1px solid var(--rule);
+    display:block;
+  }
+  .bio p{
+    font-family:'Source Serif 4', serif;
+    font-size:18px;
+    line-height:1.65;
+    margin:0 0 12px;
+    color:var(--ink);
+  }
+  .bio .beat{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    color:var(--slate);
+  }
+
+  .section-label{
+    display:flex;
+    align-items:baseline;
+    gap:12px;
+    margin:56px 0 22px;
+  }
+  .section-label .tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--paper);
+    background:var(--wire);
+    padding:3px 8px;
+  }
+  .section-label .label-line{flex:1;border-top:1px solid var(--rule);}
+
+  .story{
+    padding:22px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .dateline{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--wire);
+    margin:0 0 8px;
+  }
+  .headline{
+    font-family:'Source Serif 4', serif;
+    font-weight:600;
+    font-size:23px;
+    line-height:1.28;
+    margin:0 0 8px;
+  }
+  a.headline-link{
+    color:var(--ink);
+    text-decoration:none;
+    background-image:linear-gradient(var(--ink),var(--ink));
+    background-repeat:no-repeat;
+    background-position:0 100%;
+    background-size:0% 1px;
+    transition:background-size .18s ease;
+  }
+  a.headline-link:hover{background-size:100% 1px;}
+  .dek{
+    font-size:15px;
+    line-height:1.6;
+    color:#3A3833;
+    margin:0 0 10px;
+    max-width:60ch;
+  }
+  .story-meta{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--slate);
+    letter-spacing:.02em;
+  }
+  .story-meta .pub{color:var(--ink);font-weight:500;}
+
+  .archive{
+    margin-top:18px;
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .archive a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid var(--rule);
+    padding-bottom:2px;
+  }
+  .archive a:hover{color:var(--wire);border-bottom-color:var(--wire);}
+
+  section.contact{
+    margin-top:56px;
+    padding:28px 0 0;
+    text-align:center;
+  }
+  .contact p.line{
+    font-family:'Source Serif 4', serif;
+    font-size:19px;
+    margin:0 0 18px;
+    color:var(--ink);
+  }
+  .contact-links{
+    display:flex;
+    justify-content:center;
+    gap:22px;
+    flex-wrap:wrap;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+  }
+  .contact-links a{
+    color:var(--ink);
+    text-decoration:none;
+    padding-bottom:2px;
+    border-bottom:1px solid var(--rule);
+  }
+  .contact-links a:hover{border-bottom-color:var(--wire);color:var(--wire);}
+
+  footer{
+    text-align:center;
+    margin-top:64px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--slate);
+  }
+
+  @media (max-width:560px){
+    h1.name{font-size:40px;}
+    section.bio{grid-template-columns:1fr;}
+    .headshot{width:104px;height:104px;}
+    nav.masthead-nav{gap:16px;flex-wrap:wrap;}
+  }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="kicker">Journalist · New York</p>
+    <h1 class="name">Madhulika Pathak</h1>
+    <p class="role-line">Business &amp; technology reporter</p>
+    <div class="rule-pair">
+      <hr class="rule">
+      <hr class="rule-thin">
+    </div>
+    <nav class="masthead-nav">
+      <a href="#about">About</a>
+      <a href="#reporting">Reporting</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="bio" id="about">
+    <img class="headshot" src="images/headshot.jpg" alt="Madhulika Pathak">
+    <div>
+      <p class="beat">Companies · markets · AI &amp; infrastructure</p>
+      <p>Madhulika Pathak is a New York-based business and technology reporter covering companies, markets, AI and the infrastructure behind the technologies reshaping the economy. She is currently an editorial intern at Forbes, where she has worked across the Wealth, Valuations, SportsMoney and breaking news desks.</p>
+      <p>Her reporting spans breaking news, financial markets, technology, trade and enterprise reporting. Her work has appeared in Forbes, Business News Daily and CohortNews.</p>
+      <p>Madhulika previously worked as a cognitive science researcher, where she studied complex datasets and conducted behavioral research. She is now pursuing an M.A. in Journalism, Business &amp; Economic Reporting at NYU.</p>
+      <p class="beat">Based in New York · Open to tips and freelance assignments</p>
+    </div>
+  </section>
+
+  <section id="reporting">
+    <div class="section-label">
+      <span class="tag">Selected clips</span>
+      <span class="label-line"></span>
+    </div>
+
+    <article class="story">
+      <p class="dateline">Exclusive · July 2026</p>
+      <h2 class="headline"><a class="headline-link" href="https://www.forbes.com/sites/madhulika-pathak/2026/07/16/exclusive-canvas-billionaire-cofounders-reveal-next-step-in-plan-to-give-away-80-of-their-fortune/" target="_blank" rel="noopener">Canva’s Billionaire Cofounders Reveal Next Step In Plan To Give Away Vast Majority Of Their Fortune</a></h2>
+      <p class="dek">An exclusive interview with Canva CEO Melanie Perkins on the philanthropic plans she and cofounder Cliff Obrecht are pursuing next.</p>
+      <p class="story-meta"><span class="pub">Forbes</span> · Exclusive interview</p>
+    </article>
+
+    <article class="story">
+      <p class="dateline">July 2026</p>
+      <h2 class="headline"><a class="headline-link" href="https://www.forbes.com/sites/madhulika-pathak/2026/07/14/helsing-cofounders-fortunes-get-big-boost-from-new-18-billion-valuation/" target="_blank" rel="noopener">Helsing Cofounders’ Fortunes Get Big Boost From New $18 Billion Valuation</a></h2>
+      <p class="dek">How a new funding round changed the fortunes of the founders behind Europe’s most valuable startup.</p>
+      <p class="story-meta"><span class="pub">Forbes</span> · Wealth &amp; valuations</p>
+    </article>
+
+    <article class="story">
+      <p class="dateline">Breaking news · July 2026</p>
+      <h2 class="headline"><a class="headline-link" href="https://www.forbes.com/sites/madhulika-pathak/2026/07/10/apple-claims-openai-stole-trade-secrets-in-new-lawsuit/" target="_blank" rel="noopener">Apple Claims OpenAI Stole Trade Secrets In New Lawsuit</a></h2>
+      <p class="dek">Apple alleges OpenAI improperly obtained trade secrets tied to the iPhone maker’s hardware development through former employees.</p>
+      <p class="story-meta"><span class="pub">Forbes</span> · Breaking news</p>
+    </article>
+
+    <article class="story">
+      <p class="dateline">Breaking news · July 2026</p>
+      <h2 class="headline"><a class="headline-link" href="https://www.forbes.com/sites/madhulika-pathak/2026/07/09/openai-debuts-chatgpt-work-workplace-ai-agent-with-gpt-56/" target="_blank" rel="noopener">OpenAI Debuts ChatGPT Work Workplace AI Agent With GPT-5.6</a></h2>
+      <p class="dek">OpenAI’s launch of a workplace AI agent as the company competes with Anthropic, Microsoft and Google for enterprise customers.</p>
+      <p class="story-meta"><span class="pub">Forbes</span> · Breaking news</p>
+    </article>
+
+    <article class="story">
+      <p class="dateline">Sports business · June 2026</p>
+      <h2 class="headline"><a class="headline-link" href="https://www.forbes.com/sites/madhulika-pathak/2026/06/21/11-world-cup-matches-where-one-player-is-worth-more-than-the-entire-opposing-team/" target="_blank" rel="noopener">11 World Cup Matches Where One Player Is Worth More Than The Entire Opposing Team</a></h2>
+      <p class="dek">A data-driven look at the biggest player-value mismatches in the 2026 World Cup group stage.</p>
+      <p class="story-meta"><span class="pub">Forbes</span> · SportsMoney</p>
+    </article>
+
+    <article class="story">
+      <p class="dateline">Markets · April 2026</p>
+      <h2 class="headline"><a class="headline-link" href="https://wp.nyu.edu/upandcoming/2026/04/28/quantum-stocks-see-boost-as-nvidia-unveils-ai-tools-for-quantum-computing/" target="_blank" rel="noopener">Quantum Stocks See Boost as Nvidia Unveils AI Tools for Quantum Computing</a></h2>
+      <p class="dek">Nvidia’s open-source models for calibration and error correction sent quantum computing stocks sharply higher.</p>
+      <p class="story-meta"><span class="pub">Business News Daily</span> · Markets</p>
+    </article>
+
+    <article class="story">
+      <p class="dateline">AI &amp; policy · April 2026</p>
+      <h2 class="headline"><a class="headline-link" href="https://wp.nyu.edu/upandcoming/2026/04/03/anthropic-backs-20-million-super-pac-in-growing-ai-regulation-fight/" target="_blank" rel="noopener">Anthropic Backs $20 Million Super PAC in Growing AI Regulation Fight</a></h2>
+      <p class="dek">Anthropic’s political spending adds a new front to the growing fight over AI regulation in Washington.</p>
+      <p class="story-meta"><span class="pub">Business News Daily</span> · AI &amp; policy</p>
+    </article>
+
+    <article class="story">
+      <p class="dateline">Technology &amp; geopolitics · April 2026</p>
+      <h2 class="headline"><a class="headline-link" href="https://wp.nyu.edu/upandcoming/2026/04/09/iran-targets-the-ai-brain-of-the-american-war-machine/" target="_blank" rel="noopener">Iran Targets the AI Brain of the American War Machine</a></h2>
+      <p class="dek">An examination of the vulnerability of commercial cloud and data-center infrastructure in a conflict increasingly dependent on AI.</p>
+      <p class="story-meta"><span class="pub">Business News Daily</span> · Technology &amp; geopolitics</p>
+    </article>
+
+    <article class="story">
+      <p class="dateline">Markets &amp; earnings · November 2025</p>
+      <h2 class="headline"><a class="headline-link" href="https://cohortnews.blogspot.com/2025/11/power-cooling-companies-rush-to-meet-ai.html" target="_blank" rel="noopener">Power, Cooling Companies Rush to Meet AI Demand, With Strong Results</a></h2>
+      <p class="dek">Mid-cap power and cooling infrastructure firms posted standout earnings as hyperscalers race to keep data centers running.</p>
+      <p class="story-meta"><span class="pub">CohortNews</span> · Markets &amp; earnings</p>
+    </article>
+
+    <article class="story">
+      <p class="dateline">Trade · October 2025</p>
+      <h2 class="headline"><a class="headline-link" href="https://cohortnews.blogspot.com/2025/10/textiles-take-long-route-tariffs-spark.html" target="_blank" rel="noopener">Textiles Take the Long Route: Tariffs Spark Global Loophole Hunt</a></h2>
+      <p class="dek">Small businesses and exporters are rerouting shipments through third countries to sidestep steep new tariffs.</p>
+      <p class="story-meta"><span class="pub">CohortNews</span> · Trade</p>
+    </article>
+
+    <div class="section-label" style="margin-top:42px;">
+      <span class="tag">More work</span>
+      <span class="label-line"></span>
+    </div>
+    <div class="archive">
+      <a href="https://www.forbes.com/sites/madhulika-pathak/" target="_blank" rel="noopener">Forbes archive ↗</a>
+      <a href="https://wp.nyu.edu/upandcoming/author/mgp10022/" target="_blank" rel="noopener">Business News Daily archive ↗</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <p class="line">Have a tip, a story, or an assignment? I’d like to hear from you.</p>
+    <div class="contact-links">
+      <a href="mailto:mgp10022@nyu.edu">Email</a>
+      <a href="https://www.linkedin.com/in/madhulika-pathak/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.forbes.com/sites/madhulika-pathak/" target="_blank" rel="noopener">Forbes</a>
+    </div>
+  </section>
+
+  <footer>Madhulika Pathak · Portfolio</footer>
+
+</div>
+</body>
+</html>
