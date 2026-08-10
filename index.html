@@ -4,7 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Madhulika Pathak — Business & Technology Reporter</title>
+
+<title>Madhulika Pathak | Business & Technology Reporter</title>
+<meta name="description" content="Madhulika Pathak is a New York-based business and technology reporter covering companies, capital, AI and infrastructure.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,14 +90,6 @@ h1.name{
   margin:0;
 }
 
-.rule-pair{
-  padding-top:14px;
-}
-
-.rule-pair hr:first-child{
-  margin-bottom:3px;
-}
-
 nav.masthead-nav{
   display:flex;
   justify-content:center;
@@ -141,7 +135,7 @@ section.bio{
   font-family:'Source Serif 4', serif;
   font-size:18px;
   line-height:1.65;
-  margin:0 0 12px;
+  margin:0 0 14px;
   color:var(--ink);
 }
 
@@ -151,15 +145,7 @@ section.bio{
   line-height:1.6;
   letter-spacing:.02em;
   color:var(--wire);
-  margin:4px 0 14px;
-}
-
-.bio .beat{
-  font-family:'IBM Plex Mono', monospace;
-  font-size:12px;
-  letter-spacing:.05em;
-  text-transform:uppercase;
-  color:var(--slate);
+  margin:18px 0 0;
 }
 
 .section-label{
@@ -191,7 +177,7 @@ section.bio{
 
 .featured-story{
   margin:30px 0 10px;
-  padding:28px 30px;
+  padding:30px;
   border:1px solid var(--ink);
   background:var(--paper-dim);
 }
@@ -266,6 +252,36 @@ a.headline-link:hover{
   font-weight:500;
 }
 
+.story-tags{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
+
+.story-tags span{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:9px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--slate);
+  border:1px solid var(--rule);
+  padding:3px 6px;
+}
+
+.range-story{
+  padding:18px 0;
+  border-bottom:1px solid var(--rule);
+}
+
+.range-story .headline{
+  font-size:19px;
+}
+
+.range-story .dek{
+  font-size:14px;
+}
+
 .archive{
   margin-top:18px;
   display:flex;
@@ -337,6 +353,7 @@ footer{
 }
 
 @media (max-width:560px){
+
   h1.name{
     font-size:40px;
   }
@@ -371,22 +388,29 @@ footer{
 <div class="wrap">
 
 <header class="masthead">
+
   <p class="kicker">Journalist · New York</p>
+
   <h1 class="name">Madhulika Pathak</h1>
-  <p class="role-line">Business &amp; technology reporter</p>
+
+  <p class="role-line">
+    Business &amp; technology reporter
+  </p>
+
 </header>
 
-<div class="rule-pair">
-  <hr class="rule">
-  <hr class="rule-thin">
-</div>
+<hr class="rule">
 
 <nav class="masthead-nav">
+
   <a href="#about">About</a>
   <a href="#reporting">Reporting</a>
   <a href="#contact">Contact</a>
   <a href="MadhulikaPathak_CV (1).pdf" target="_blank" rel="noopener">Résumé</a>
+
 </nav>
+
+<hr class="rule-thin">
 
 <section class="bio" id="about">
 
@@ -397,36 +421,34 @@ footer{
   >
 
   <div>
+
     <p>
-      Madhulika Pathak is a New York-based business and technology reporter covering companies, markets, AI and the infrastructure behind the technologies reshaping the economy. She recently worked as an editorial intern at Forbes, where she worked across the Wealth, Valuations, SportsMoney and breaking news desks.
+      I’m a New York-based business and technology reporter covering companies, markets, AI and the infrastructure behind the technologies reshaping the economy. I recently worked as an editorial intern at Forbes across the Wealth, Valuations, SportsMoney and breaking news desks.
     </p>
 
     <p>
-      Her reporting spans breaking news, financial markets, technology, trade and enterprise reporting. Her work has appeared in Forbes, Business News Daily and CohortNews.
-    </p>
-
-    <p>
-      Madhulika previously worked as a cognitive science researcher, where she studied complex datasets and conducted behavioral research. She is now pursuing an M.A. in Journalism, Business &amp; Economic Reporting at NYU.
+      My reporting spans breaking news, financial markets, technology, trade and enterprise reporting. My work has appeared in Forbes, Business News Daily and NYU’s student publication.
     </p>
 
     <p class="positioning">
       I report on the companies, capital and infrastructure shaping how technology enters the economy.
     </p>
 
-    <p class="beat">
-      Based in New York · Open to tips and freelance assignments
-    </p>
   </div>
 
 </section>
 
 <div class="section-label" id="reporting">
-  <span class="tag">Selected clips</span>
+  <span class="tag">Selected reporting</span>
   <span class="label-line"></span>
 </div>
 
+<!-- FEATURED FORBES STORY -->
+
 <article class="story featured-story">
+
   <p class="featured-label">Featured reporting</p>
+
   <p class="dateline">Exclusive · July 2026</p>
 
   <h2 class="headline">
@@ -436,7 +458,7 @@ footer{
       target="_blank"
       rel="noopener"
     >
-      Canva’s Billionaire Cofounders Reveal Next Step In Plan To Give Away Vast Majority Of Their Fortune
+      Exclusive: Canva’s Billionaire Cofounders Reveal Next Step In Plan To Give Away Vast Majority Of Their Fortune
     </a>
   </h2>
 
@@ -447,9 +469,19 @@ footer{
   <p class="story-meta">
     <span class="pub">Forbes</span> · Exclusive interview
   </p>
+
+  <div class="story-tags">
+    <span>Companies</span>
+    <span>Wealth</span>
+    <span>Interview</span>
+  </div>
+
 </article>
 
+<!-- FORBES -->
+
 <article class="story">
+
   <p class="dateline">July 2026</p>
 
   <h2 class="headline">
@@ -470,9 +502,17 @@ footer{
   <p class="story-meta">
     <span class="pub">Forbes</span> · Wealth &amp; valuations
   </p>
+
+  <div class="story-tags">
+    <span>Companies</span>
+    <span>Valuations</span>
+    <span>Startups</span>
+  </div>
+
 </article>
 
 <article class="story">
+
   <p class="dateline">Breaking news · July 2026</p>
 
   <h2 class="headline">
@@ -493,9 +533,17 @@ footer{
   <p class="story-meta">
     <span class="pub">Forbes</span> · Breaking news
   </p>
+
+  <div class="story-tags">
+    <span>AI</span>
+    <span>Companies</span>
+    <span>Breaking news</span>
+  </div>
+
 </article>
 
 <article class="story">
+
   <p class="dateline">Breaking news · July 2026</p>
 
   <h2 class="headline">
@@ -516,9 +564,119 @@ footer{
   <p class="story-meta">
     <span class="pub">Forbes</span> · Breaking news
   </p>
+
+  <div class="story-tags">
+    <span>AI</span>
+    <span>Enterprise</span>
+    <span>Breaking news</span>
+  </div>
+
+</article>
+
+<!-- NYU -->
+
+<article class="story">
+
+  <p class="dateline">Markets · April 2026</p>
+
+  <h2 class="headline">
+    <a
+      class="headline-link"
+      href="https://wp.nyu.edu/upandcoming/2026/04/28/quantum-stocks-see-boost-as-nvidia-unveils-ai-tools-for-quantum-computing/"
+      target="_blank"
+      rel="noopener"
+    >
+      Quantum Stocks See Boost as Nvidia Unveils AI Tools for Quantum Computing
+    </a>
+  </h2>
+
+  <p class="dek">
+    Nvidia’s open-source models for calibration and error correction sent quantum computing stocks sharply higher.
+  </p>
+
+  <p class="story-meta">
+    <span class="pub">NYU</span> · Student publication
+  </p>
+
+  <div class="story-tags">
+    <span>AI</span>
+    <span>Markets</span>
+    <span>Technology</span>
+  </div>
+
 </article>
 
 <article class="story">
+
+  <p class="dateline">AI &amp; policy · April 2026</p>
+
+  <h2 class="headline">
+    <a
+      class="headline-link"
+      href="https://wp.nyu.edu/upandcoming/2026/04/03/anthropic-backs-20-million-super-pac-in-growing-ai-regulation-fight/"
+      target="_blank"
+      rel="noopener"
+    >
+      Anthropic Backs $20 Million Super PAC in Growing AI Regulation Fight
+    </a>
+  </h2>
+
+  <p class="dek">
+    Anthropic’s political spending adds a new front to the growing fight over AI regulation in Washington.
+  </p>
+
+  <p class="story-meta">
+    <span class="pub">NYU</span> · Student publication
+  </p>
+
+  <div class="story-tags">
+    <span>AI</span>
+    <span>Policy</span>
+    <span>Politics</span>
+  </div>
+
+</article>
+
+<article class="story">
+
+  <p class="dateline">Technology &amp; geopolitics · April 2026</p>
+
+  <h2 class="headline">
+    <a
+      class="headline-link"
+      href="https://wp.nyu.edu/upandcoming/2026/04/09/iran-targets-the-ai-brain-of-the-american-war-machine/"
+      target="_blank"
+      rel="noopener"
+    >
+      Iran Targets the AI Brain of the American War Machine
+    </a>
+  </h2>
+
+  <p class="dek">
+    An examination of the vulnerability of commercial cloud and data-center infrastructure in a conflict increasingly dependent on AI.
+  </p>
+
+  <p class="story-meta">
+    <span class="pub">NYU</span> · Student publication
+  </p>
+
+  <div class="story-tags">
+    <span>AI</span>
+    <span>Infrastructure</span>
+    <span>Geopolitics</span>
+  </div>
+
+</article>
+
+<!-- RANGE -->
+
+<div class="section-label" style="margin-top:48px;">
+  <span class="tag">Range</span>
+  <span class="label-line"></span>
+</div>
+
+<article class="range-story">
+
   <p class="dateline">Sports business · June 2026</p>
 
   <h2 class="headline">
@@ -539,78 +697,11 @@ footer{
   <p class="story-meta">
     <span class="pub">Forbes</span> · SportsMoney
   </p>
+
 </article>
 
-<article class="story">
-  <p class="dateline">Markets · April 2026</p>
+<article class="range-story">
 
-  <h2 class="headline">
-    <a
-      class="headline-link"
-      href="https://wp.nyu.edu/upandcoming/2026/04/28/quantum-stocks-see-boost-as-nvidia-unveils-ai-tools-for-quantum-computing/"
-      target="_blank"
-      rel="noopener"
-    >
-      Quantum Stocks See Boost as Nvidia Unveils AI Tools for Quantum Computing
-    </a>
-  </h2>
-
-  <p class="dek">
-    Nvidia’s open-source models for calibration and error correction sent quantum computing stocks sharply higher.
-  </p>
-
-  <p class="story-meta">
-    <span class="pub">Business News Daily</span> · Markets
-  </p>
-</article>
-
-<article class="story">
-  <p class="dateline">AI &amp; policy · April 2026</p>
-
-  <h2 class="headline">
-    <a
-      class="headline-link"
-      href="https://wp.nyu.edu/upandcoming/2026/04/03/anthropic-backs-20-million-super-pac-in-growing-ai-regulation-fight/"
-      target="_blank"
-      rel="noopener"
-    >
-      Anthropic Backs $20 Million Super PAC in Growing AI Regulation Fight
-    </a>
-  </h2>
-
-  <p class="dek">
-    Anthropic’s political spending adds a new front to the growing fight over AI regulation in Washington.
-  </p>
-
-  <p class="story-meta">
-    <span class="pub">Business News Daily</span> · AI &amp; policy
-  </p>
-</article>
-
-<article class="story">
-  <p class="dateline">Technology &amp; geopolitics · April 2026</p>
-
-  <h2 class="headline">
-    <a
-      class="headline-link"
-      href="https://wp.nyu.edu/upandcoming/2026/04/09/iran-targets-the-ai-brain-of-the-american-war-machine/"
-      target="_blank"
-      rel="noopener"
-    >
-      Iran Targets the AI Brain of the American War Machine
-    </a>
-  </h2>
-
-  <p class="dek">
-    An examination of the vulnerability of commercial cloud and data-center infrastructure in a conflict increasingly dependent on AI.
-  </p>
-
-  <p class="story-meta">
-    <span class="pub">Business News Daily</span> · Technology &amp; geopolitics
-  </p>
-</article>
-
-<article class="story">
   <p class="dateline">Markets &amp; earnings · November 2025</p>
 
   <h2 class="headline">
@@ -631,9 +722,11 @@ footer{
   <p class="story-meta">
     <span class="pub">CohortNews</span> · Markets &amp; earnings
   </p>
+
 </article>
 
-<article class="story">
+<article class="range-story">
+
   <p class="dateline">Trade · October 2025</p>
 
   <h2 class="headline">
@@ -654,14 +747,18 @@ footer{
   <p class="story-meta">
     <span class="pub">CohortNews</span> · Trade
   </p>
+
 </article>
 
+<!-- ARCHIVES -->
+
 <div class="section-label" style="margin-top:42px;">
-  <span class="tag">More work</span>
+  <span class="tag">Archives</span>
   <span class="label-line"></span>
 </div>
 
 <div class="archive">
+
   <a
     href="https://www.forbes.com/sites/madhulika-pathak/"
     target="_blank"
@@ -675,20 +772,24 @@ footer{
     target="_blank"
     rel="noopener"
   >
-    Business News Daily archive ↗
+    NYU archive ↗
   </a>
+
 </div>
 
 <section class="contact" id="contact">
 
-  <div class="rule-thin"></div>
+  <hr class="rule-thin">
 
   <p class="line">
     Have a tip, a story, or an assignment? I’d like to hear from you.
   </p>
 
   <div class="contact-links">
-    <a href="mailto:madhulika.pathak01@gmail.com">Email</a>
+
+    <a href="mailto:mgp10022@nyu.edu">
+      Email
+    </a>
 
     <a
       href="https://www.linkedin.com/in/madhulika-pathak-85552b283/"
@@ -705,6 +806,7 @@ footer{
     >
       Forbes
     </a>
+
   </div>
 
 </section>
